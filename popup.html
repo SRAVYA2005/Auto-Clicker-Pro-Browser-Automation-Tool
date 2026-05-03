@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Clicker Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>⚡ Auto Clicker Pro</h2>
+
+<input type="number" id="interval" placeholder="Interval (ms)" value="5000">
+
+<button id="select">📍 Select Position</button>
+
+<div class="controls">
+  <button id="start">▶ Start</button>
+  <button id="pause">⏸ Pause</button>
+  <button id="resume">⏵ Resume</button>
+  <button id="stop">⏹ Stop</button>
+</div>
+
+<p>Status: <span id="status" class="status stopped">Stopped</span></p>
+<p>⏱ <span id="timer">0s</span></p>
+
+</body>
+<script src="popup.js"></script>
+</html>

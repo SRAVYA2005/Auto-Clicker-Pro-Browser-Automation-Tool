@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Clicker Pro",
+  "version": "5.1",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>", "file:///*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+
+
+  "commands": {
+    "start-clicking": {
+      "suggested_key": { "default": "Ctrl+Shift+S" },
+      "description": "Start Auto Clicker"
+    },
+    "stop-clicking": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "Stop Auto Clicker"
+    },
+    "pause-clicking": {
+      "suggested_key": { "default": "Ctrl+Shift+P" },
+      "description": "Pause Auto Clicker"
+    },
+    "resume-clicking": {
+      "suggested_key": { "default": "Ctrl+Shift+R" },
+      "description": "Resume Auto Clicker"
+    }
+  }
+}
